@@ -1,4 +1,4 @@
-*Все ресеты*/
+/*Все ресеты*/
 
 
 /* Указываем box sizing */
@@ -58,6 +58,8 @@ a {
     --white-color: #FFFFFF;
     --blue-color:  #3172B9;
     --gray2-color: #787878;
+    --white-gray-color: #e4e4e4;
+    --retreat: 30px;
 }
 
 /*fonts*/
@@ -104,6 +106,27 @@ body {
 .flex {
     display: flex;
 }
+
+.title__h2 {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46.8px;
+    color: var(--black-color);
+}
+
+.title__h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--black-color);
+}
+
+.cards__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21.2px;
+    color: var(--gray2-color);
+} 
 
 /*header*/
 
@@ -154,6 +177,7 @@ body {
 }
 
 .hero__container {
+    margin-bottom: 87px;
     padding: 113px 54% 134px 12%;
     background-image: url(../img/Hero-bg1640.jpg);
     background-size: cover;
@@ -211,4 +235,84 @@ body {
     background-image: url(../img/ssl-bg.svg);
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+/*services*/
+
+.services {
+    margin-bottom: 87px;
+}
+
+.services__container {
+    text-align: center;
+    padding: 0 12% 10.2% 12%;
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.services__title {
+    margin-bottom: 22px;
+}
+
+.services__text {
+    margin-bottom: 50px;
+    padding-right: 11px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.79px;
+    color: var(--gray2-color);
+}
+
+.services__card__item {
+    padding: 61px 30px;
+    max-width: calc((100% - (var(--retreat) * 3)) / 4);
+    border: 1px solid var(--white-gray-color);
+}
+
+.services__card__item:not(:last-child) {
+    margin-right: var(--retreat);
+}
+
+.services__card__img {
+    margin-bottom: 26px;
+}
+.services__card__title {
+    margin-bottom: 15px;
+}
+
+/*articles*/
+
+.articles__container {
+    padding: 0 12% 0 11.8%;
+}
+
+.articles__title {
+    margin-bottom: 43px;
+}
+
+.articles__card__list {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.articles__card__item {
+    padding: 20px 128px 35px 201px;    
+    width: calc((100% - var(--retreat)) / 2);
+    margin-bottom: var(--retreat);
+    margin-right: var(--retreat);
+    border: 1px solid var(--white-gray-color);
+}
+
+.articles__card__item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.card__date {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: var(--gray2-color);
+}
+
+.card__title {
+    margin-bottom: 15px;
 }
